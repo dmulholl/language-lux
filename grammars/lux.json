@@ -1,0 +1,70 @@
+{
+  "scopeName": "source.lux",
+  "name": "Lux",
+  "fileTypes": ["lux"],
+  "patterns": [
+    {
+      "begin": "//",
+      "end": "\n",
+      "name": "comment"
+    },
+    {
+        "begin": "\"",
+        "end": "\"",
+        "name": "string.double.lux",
+        "patterns": [
+            {
+                "match": "\\\\.",
+                "name": "constant.character.escape.lux"
+            }
+        ]
+    },
+    {
+        "begin": "'",
+        "end": "'",
+        "name": "string.single.lux",
+        "patterns": [
+            {
+                "match": "\\\\.",
+                "name": "constant.character.escape.lux"
+            }
+        ]
+    },
+    {
+        "match": "\\b(if|else|for|while|print|println)\\b",
+        "name": "keyword.other.lux"
+    },
+    {
+        "match": "\\b(break|continue|return)\\b",
+        "name": "keyword.control.lux"
+    },
+    {
+        "match": "[\\/=\\-+!*%<>&|^~,\\?:\\[\\]]",
+        "name": "keyword.operator.lux"
+    },
+    {
+        "match": "\\b(class|def|var)\\b",
+        "name": "storage.type.lux"
+    },
+    {
+        "match": "\\b(pub|pri)\\b",
+        "name": "storage.modifier.lux"
+    },
+    {
+        "match": "\\b(self)\\b",
+        "name": "variable.language.lux"
+    },
+    {
+        "match": "\\$[\\w\\d.]+",
+        "name": "variable.other.lux"
+    },
+    {
+        "match": "\\b(\\d+([.]\\d+)?)\\b",
+        "name": "constant.numeric.lux"
+    },
+    {
+        "match": "\\b(true|false|null)\\b",
+        "name": "constant.language.lux"
+    }
+  ]
+}

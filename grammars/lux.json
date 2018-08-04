@@ -31,6 +31,22 @@
         ]
     },
     {
+        "match": "(def)\\s+([$]?\\w+)\\s*\\(.*\\)",
+        "captures": {
+            "1": {"name": "storage.type.lux"},
+            "2": {"name": "entity.name.function.lux"}
+        },
+        "name": "meta.function.lux"
+    },
+    {
+        "match": "(class)\\s+(\\w+)",
+        "captures": {
+            "1": {"name": "storage.type.lux"},
+            "2": {"name": "entity.name.class.lux"}
+        },
+        "name": "meta.class.lux"
+    },
+    {
         "match": "\\b(if|else|for|while|print|println)\\b",
         "name": "keyword.other.lux"
     },

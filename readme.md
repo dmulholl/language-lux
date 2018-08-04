@@ -1,3 +1,4 @@
-# Lux language support in Atom
 
-Adds syntax highlighting for Lux.
+# Lux Syntax Highlighting
+
+A syntax highlighting package for Atom.
